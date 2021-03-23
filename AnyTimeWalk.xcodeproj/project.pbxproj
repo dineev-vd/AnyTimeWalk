@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A1D191770B424F2B7158B0B /* Pods_AnyTimeWalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59087694926FB29318E083F5 /* Pods_AnyTimeWalk.framework */; };
 		861017CF25E654FC00ABDE6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861017CE25E654FC00ABDE6A /* AppDelegate.swift */; };
 		861017D125E654FC00ABDE6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861017D025E654FC00ABDE6A /* SceneDelegate.swift */; };
 		861017D325E654FC00ABDE6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861017D225E654FC00ABDE6A /* ViewController.swift */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B1257231BC0C3E3232A9A80 /* Pods-AnyTimeWalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnyTimeWalk.debug.xcconfig"; path = "Target Support Files/Pods-AnyTimeWalk/Pods-AnyTimeWalk.debug.xcconfig"; sourceTree = "<group>"; };
+		32F6BFEF58B3CCDFF3027ECD /* Pods-AnyTimeWalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnyTimeWalk.release.xcconfig"; path = "Target Support Files/Pods-AnyTimeWalk/Pods-AnyTimeWalk.release.xcconfig"; sourceTree = "<group>"; };
+		59087694926FB29318E083F5 /* Pods_AnyTimeWalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnyTimeWalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		861017CB25E654FC00ABDE6A /* AnyTimeWalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnyTimeWalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		861017CE25E654FC00ABDE6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		861017D025E654FC00ABDE6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A1D191770B424F2B7158B0B /* Pods_AnyTimeWalk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34582F0A4250FE0640A4EF95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59087694926FB29318E083F5 /* Pods_AnyTimeWalk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		861017C225E654FC00ABDE6A = {
 			isa = PBXGroup;
 			children = (
 				861017CD25E654FC00ABDE6A /* AnyTimeWalk */,
 				861017CC25E654FC00ABDE6A /* Products */,
+				B9278AF65FAA24B6585CA2CF /* Pods */,
+				34582F0A4250FE0640A4EF95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +85,16 @@
 			path = AnyTimeWalk;
 			sourceTree = "<group>";
 		};
+		B9278AF65FAA24B6585CA2CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B1257231BC0C3E3232A9A80 /* Pods-AnyTimeWalk.debug.xcconfig */,
+				32F6BFEF58B3CCDFF3027ECD /* Pods-AnyTimeWalk.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 861017E225E654FF00ABDE6A /* Build configuration list for PBXNativeTarget "AnyTimeWalk" */;
 			buildPhases = (
+				7F78719FAC84141A89FD27E6 /* [CP] Check Pods Manifest.lock */,
 				861017C725E654FC00ABDE6A /* Sources */,
 				861017C825E654FC00ABDE6A /* Frameworks */,
 				861017C925E654FC00ABDE6A /* Resources */,
+				8C24C3BCECFCC5F26D139BB3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F78719FAC84141A89FD27E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnyTimeWalk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C24C3BCECFCC5F26D139BB3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnyTimeWalk/Pods-AnyTimeWalk-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnyTimeWalk/Pods-AnyTimeWalk-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnyTimeWalk/Pods-AnyTimeWalk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		861017C725E654FC00ABDE6A /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		861017E325E654FF00ABDE6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B1257231BC0C3E3232A9A80 /* Pods-AnyTimeWalk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +376,7 @@
 		};
 		861017E425E654FF00ABDE6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32F6BFEF58B3CCDFF3027ECD /* Pods-AnyTimeWalk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
