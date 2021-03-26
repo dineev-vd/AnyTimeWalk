@@ -27,8 +27,6 @@ class MostViewedViewController: UIViewController, UICollectionViewDelegate, UICo
         return cell
     }
     
-    
-    
     //Аутлет для CollectionView
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -47,6 +45,5 @@ class MostViewedViewController: UIViewController, UICollectionViewDelegate, UICo
     }
 
     //Массив для прогулок
-    private var walks = [Walk(walkId: "1", name: "test", description: "", featuredImage: UIImage(named: "rome")!, isLiked: false),Walk(walkId: "2", name: "test", description: "", featuredImage: UIImage(named: "rome")!, isLiked: false)]
-    
+    private var walks = [Walk(walkId: "1", name: "test", description: "", featuredImage: UIImage(named: "rome.jpg")!, isLiked: false),Walk(walkId: "2", name: "test", description: "", featuredImage: UIImage(named: "rome.jpg")!, isLiked: false)]
 }
