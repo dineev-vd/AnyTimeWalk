@@ -13,6 +13,14 @@ class MostViewedViewController: UIViewController, UICollectionViewDelegate, UICo
         if let indexPath = collectionView.indexPath(for: cell) {
             walks[indexPath.row].isLiked = walks[indexPath.row].isLiked ? false : true
             cell.isLiked = walks[indexPath.row].isLiked
+            if(walks[indexPath.row].isLiked){
+                favs.append(walks[indexPath.row])
+            } else {
+                if let index = favs.firstIndex(of: walks[indexPath.row]){
+                    print(index)
+                    favs.remove(at: index)
+                }
+            }
         }
     }
     
@@ -52,5 +60,5 @@ class MostViewedViewController: UIViewController, UICollectionViewDelegate, UICo
     }
 
     //Массив для прогулок
-    private var walks = [Walk(walkId: "1", name: "test", description: "", featuredImage: UIImage(named: "rome.jpg")!, isLiked: false),Walk(walkId: "2", name: "test", description: "", featuredImage: UIImage(named: "rome.jpg")!, isLiked: false)]
+    private var walks = [Walk(walkId: "1", name: "test", description: "This is description for test", featuredImage: UIImage(named: "rome.jpg")!, isLiked: false),Walk(walkId: "2", name: "test2", description: "This is description for test2", featuredImage: UIImage(named: "rome.jpg")!, isLiked: false)]
 }

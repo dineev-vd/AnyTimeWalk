@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct Walk{
+struct Walk: Equatable{
     var walkId = ""
     var name = ""
     var description = ""
@@ -21,4 +21,10 @@ struct Walk{
         self.featuredImage = featuredImage
         self.isLiked = isLiked
     }
+    
+    static func ==(lhs: Walk, rhs: Walk) -> Bool {
+        return lhs.walkId == rhs.walkId
+    }
 }
+
+var favs: [Walk] = []
