@@ -12,7 +12,7 @@ struct Walk{
     var walkId = ""
     var name = ""
     var description = ""
-    var featuredImage: UIImage?
+    var featuredImage: UIImage!
     var isLiked = false
     init(walkId: String, name: String, description: String, featuredImage: UIImage, isLiked: Bool){
         self.walkId = walkId;

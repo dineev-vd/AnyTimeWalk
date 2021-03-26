@@ -27,6 +27,13 @@ class MostViewedViewController: UIViewController, UICollectionViewDelegate, UICo
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let controller = tabBarController?.storyboard?.instantiateViewController(identifier: "InfoViewController") as? InfoViewController{
+            controller.currentWalk = walks[indexPath.row]
+            tabBarController?.present(controller, animated: true)
+        }
+    }
+    
     //Аутлет для CollectionView
     @IBOutlet weak var collectionView: UICollectionView!
     

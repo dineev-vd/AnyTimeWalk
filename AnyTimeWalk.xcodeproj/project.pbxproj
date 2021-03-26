@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1760633D260E3EF100EF30FD /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1760633C260E3EF100EF30FD /* InfoViewController.swift */; };
 		17CEED02260BE720007FC409 /* WalkViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CEED01260BE720007FC409 /* WalkViewCell.swift */; };
 		17CEED05260BE72A007FC409 /* Walk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CEED04260BE72A007FC409 /* Walk.swift */; };
 		17CEED08260BE82A007FC409 /* MostViewedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CEED07260BE82A007FC409 /* MostViewedViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1760633C260E3EF100EF30FD /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		17CEED01260BE720007FC409 /* WalkViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkViewCell.swift; sourceTree = "<group>"; };
 		17CEED04260BE72A007FC409 /* Walk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Walk.swift; sourceTree = "<group>"; };
 		17CEED07260BE82A007FC409 /* MostViewedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostViewedViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				17CEED04260BE72A007FC409 /* Walk.swift */,
 				17CEED07260BE82A007FC409 /* MostViewedViewController.swift */,
 				17CEED0B260BE8E7007FC409 /* Media.xcassets */,
+				1760633C260E3EF100EF30FD /* InfoViewController.swift */,
 			);
 			path = AnyTimeWalk;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				861017D925E654FC00ABDE6A /* AnyTimeWalk.xcdatamodeld in Sources */,
 				861017D125E654FC00ABDE6A /* SceneDelegate.swift in Sources */,
 				17CEED05260BE72A007FC409 /* Walk.swift in Sources */,
+				1760633D260E3EF100EF30FD /* InfoViewController.swift in Sources */,
 				17CEED02260BE720007FC409 /* WalkViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
