@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17CEED02260BE720007FC409 /* WalkViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CEED01260BE720007FC409 /* WalkViewCell.swift */; };
+		17CEED05260BE72A007FC409 /* Walk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CEED04260BE72A007FC409 /* Walk.swift */; };
+		17CEED08260BE82A007FC409 /* MostViewedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CEED07260BE82A007FC409 /* MostViewedViewController.swift */; };
+		17CEED0C260BE8E7007FC409 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17CEED0B260BE8E7007FC409 /* Media.xcassets */; };
 		3A1D191770B424F2B7158B0B /* Pods_AnyTimeWalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59087694926FB29318E083F5 /* Pods_AnyTimeWalk.framework */; };
 		861017CF25E654FC00ABDE6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861017CE25E654FC00ABDE6A /* AppDelegate.swift */; };
 		861017D125E654FC00ABDE6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861017D025E654FC00ABDE6A /* SceneDelegate.swift */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17CEED01260BE720007FC409 /* WalkViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkViewCell.swift; sourceTree = "<group>"; };
+		17CEED04260BE72A007FC409 /* Walk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Walk.swift; sourceTree = "<group>"; };
+		17CEED07260BE82A007FC409 /* MostViewedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostViewedViewController.swift; sourceTree = "<group>"; };
+		17CEED0B260BE8E7007FC409 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		2B1257231BC0C3E3232A9A80 /* Pods-AnyTimeWalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnyTimeWalk.debug.xcconfig"; path = "Target Support Files/Pods-AnyTimeWalk/Pods-AnyTimeWalk.debug.xcconfig"; sourceTree = "<group>"; };
 		32F6BFEF58B3CCDFF3027ECD /* Pods-AnyTimeWalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnyTimeWalk.release.xcconfig"; path = "Target Support Files/Pods-AnyTimeWalk/Pods-AnyTimeWalk.release.xcconfig"; sourceTree = "<group>"; };
 		59087694926FB29318E083F5 /* Pods_AnyTimeWalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnyTimeWalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +89,10 @@
 				861017DC25E654FF00ABDE6A /* LaunchScreen.storyboard */,
 				861017DF25E654FF00ABDE6A /* Info.plist */,
 				861017D725E654FC00ABDE6A /* AnyTimeWalk.xcdatamodeld */,
+				17CEED01260BE720007FC409 /* WalkViewCell.swift */,
+				17CEED04260BE72A007FC409 /* Walk.swift */,
+				17CEED07260BE82A007FC409 /* MostViewedViewController.swift */,
+				17CEED0B260BE8E7007FC409 /* Media.xcassets */,
 			);
 			path = AnyTimeWalk;
 			sourceTree = "<group>";
@@ -91,7 +103,6 @@
 				2B1257231BC0C3E3232A9A80 /* Pods-AnyTimeWalk.debug.xcconfig */,
 				32F6BFEF58B3CCDFF3027ECD /* Pods-AnyTimeWalk.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -156,6 +167,7 @@
 			files = (
 				861017DE25E654FF00ABDE6A /* LaunchScreen.storyboard in Resources */,
 				861017DB25E654FF00ABDE6A /* Assets.xcassets in Resources */,
+				17CEED0C260BE8E7007FC409 /* Media.xcassets in Resources */,
 				861017D625E654FC00ABDE6A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,8 +223,11 @@
 			files = (
 				861017D325E654FC00ABDE6A /* ViewController.swift in Sources */,
 				861017CF25E654FC00ABDE6A /* AppDelegate.swift in Sources */,
+				17CEED08260BE82A007FC409 /* MostViewedViewController.swift in Sources */,
 				861017D925E654FC00ABDE6A /* AnyTimeWalk.xcdatamodeld in Sources */,
 				861017D125E654FC00ABDE6A /* SceneDelegate.swift in Sources */,
+				17CEED05260BE72A007FC409 /* Walk.swift in Sources */,
+				17CEED02260BE720007FC409 /* WalkViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +376,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XWJ7CTJ99D;
+				DEVELOPMENT_TEAM = J3PCAKUBGU;
 				INFOPLIST_FILE = AnyTimeWalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -381,7 +396,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XWJ7CTJ99D;
+				DEVELOPMENT_TEAM = J3PCAKUBGU;
 				INFOPLIST_FILE = AnyTimeWalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
