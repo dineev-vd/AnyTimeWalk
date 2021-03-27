@@ -22,6 +22,9 @@
 		861017D925E654FC00ABDE6A /* AnyTimeWalk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 861017D725E654FC00ABDE6A /* AnyTimeWalk.xcdatamodeld */; };
 		861017DB25E654FF00ABDE6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 861017DA25E654FF00ABDE6A /* Assets.xcassets */; };
 		861017DE25E654FF00ABDE6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 861017DC25E654FF00ABDE6A /* LaunchScreen.storyboard */; };
+		86AFB51D260F1B2E00BB77A8 /* AddTourController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AFB51C260F1B2E00BB77A8 /* AddTourController.swift */; };
+		86AFB522260F1C8900BB77A8 /* MostViewedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AFB521260F1C8900BB77A8 /* MostViewedController.swift */; };
+		86AFB525260F234D00BB77A8 /* AddMarkersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AFB524260F234D00BB77A8 /* AddMarkersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		861017DA25E654FF00ABDE6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		861017DD25E654FF00ABDE6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		861017DF25E654FF00ABDE6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86AFB51C260F1B2E00BB77A8 /* AddTourController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTourController.swift; sourceTree = "<group>"; };
+		86AFB521260F1C8900BB77A8 /* MostViewedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostViewedController.swift; sourceTree = "<group>"; };
+		86AFB524260F234D00BB77A8 /* AddMarkersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMarkersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,23 +93,42 @@
 		861017CD25E654FC00ABDE6A /* AnyTimeWalk */ = {
 			isa = PBXGroup;
 			children = (
+				86AFB51F260F1B3A00BB77A8 /* Models */,
+				86AFB51A260F175900BB77A8 /* Controllers */,
 				861017CE25E654FC00ABDE6A /* AppDelegate.swift */,
 				861017D025E654FC00ABDE6A /* SceneDelegate.swift */,
-				861017D225E654FC00ABDE6A /* ViewController.swift */,
 				861017D425E654FC00ABDE6A /* Main.storyboard */,
 				861017DA25E654FF00ABDE6A /* Assets.xcassets */,
 				861017DC25E654FF00ABDE6A /* LaunchScreen.storyboard */,
 				861017DF25E654FF00ABDE6A /* Info.plist */,
 				861017D725E654FC00ABDE6A /* AnyTimeWalk.xcdatamodeld */,
-				17CEED01260BE720007FC409 /* WalkViewCell.swift */,
-				17CEED04260BE72A007FC409 /* Walk.swift */,
-				17CEED07260BE82A007FC409 /* MostViewedViewController.swift */,
 				17CEED0B260BE8E7007FC409 /* Media.xcassets */,
 				1760633C260E3EF100EF30FD /* InfoViewController.swift */,
-				17606340260E4AC200EF30FD /* ProfileViewController.swift */,
 				17606343260E4FAE00EF30FD /* FavouritesViewController.swift */,
 			);
 			path = AnyTimeWalk;
+			sourceTree = "<group>";
+		};
+		86AFB51A260F175900BB77A8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				17606340260E4AC200EF30FD /* ProfileViewController.swift */,
+				861017D225E654FC00ABDE6A /* ViewController.swift */,
+				17CEED07260BE82A007FC409 /* MostViewedViewController.swift */,
+				17CEED01260BE720007FC409 /* WalkViewCell.swift */,
+				86AFB51C260F1B2E00BB77A8 /* AddTourController.swift */,
+				86AFB521260F1C8900BB77A8 /* MostViewedController.swift */,
+				86AFB524260F234D00BB77A8 /* AddMarkersViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		86AFB51F260F1B3A00BB77A8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				17CEED04260BE72A007FC409 /* Walk.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		B9278AF65FAA24B6585CA2CF /* Pods */ = {
@@ -234,11 +259,14 @@
 				861017CF25E654FC00ABDE6A /* AppDelegate.swift in Sources */,
 				17CEED08260BE82A007FC409 /* MostViewedViewController.swift in Sources */,
 				861017D925E654FC00ABDE6A /* AnyTimeWalk.xcdatamodeld in Sources */,
+				86AFB525260F234D00BB77A8 /* AddMarkersViewController.swift in Sources */,
+				86AFB522260F1C8900BB77A8 /* MostViewedController.swift in Sources */,
 				861017D125E654FC00ABDE6A /* SceneDelegate.swift in Sources */,
 				17CEED05260BE72A007FC409 /* Walk.swift in Sources */,
 				17606341260E4AC200EF30FD /* ProfileViewController.swift in Sources */,
 				1760633D260E3EF100EF30FD /* InfoViewController.swift in Sources */,
 				17606344260E4FAE00EF30FD /* FavouritesViewController.swift in Sources */,
+				86AFB51D260F1B2E00BB77A8 /* AddTourController.swift in Sources */,
 				17CEED02260BE720007FC409 /* WalkViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,7 +416,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J3PCAKUBGU;
+				DEVELOPMENT_TEAM = XWJ7CTJ99D;
 				INFOPLIST_FILE = AnyTimeWalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -408,7 +436,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J3PCAKUBGU;
+				DEVELOPMENT_TEAM = XWJ7CTJ99D;
 				INFOPLIST_FILE = AnyTimeWalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Tour" representedClassName="Tour" syncable="YES" codeGenerationType="class">
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="rating" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="createdTours" inverseEntity="User"/>
+        <relationship name="usersDone" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="doneTours" inverseEntity="User"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="createdTours" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tour" inverseName="owner" inverseEntity="Tour"/>
+        <relationship name="doneTours" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Tour" inverseName="usersDone" inverseEntity="Tour"/>
+    </entity>
+    <elements>
+        <element name="Tour" positionX="-63" positionY="-18" width="128" height="119"/>
+        <element name="User" positionX="-54" positionY="18" width="128" height="74"/>
+    </elements>
 </model>
