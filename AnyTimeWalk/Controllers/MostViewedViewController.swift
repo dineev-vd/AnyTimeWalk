@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import CoreData
 
 class MostViewedViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, WalkCollectionCellDelegate {
+    var container:NSPersistentContainer!
+    var tours: [Tour] = []
     
     func didLikeButtonPressed(cell: WalkViewCell) {
         if let indexPath = collectionView.indexPath(for: cell) {
@@ -46,6 +49,7 @@ class MostViewedViewController: UIViewController, UICollectionViewDelegate, UICo
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
+        container = NSPersistentContainer(name: "AnyTimeWalk")
         super.viewDidLoad()
         collectionView.backgroundColor = .clear
         //collectionView.dataSource = walks as! UICollectionViewDataSource
@@ -57,6 +61,19 @@ class MostViewedViewController: UIViewController, UICollectionViewDelegate, UICo
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return walks.count
+    }
+    
+    func loadSavedData() {
+        let request = Tour.createFetchRequest()
+        let sort = NSSortDescriptor(key: "name", ascending: false)
+        request.sortDescriptors = [sort]
+        do {
+            tours = try container.viewContext.fetch(request)
+            print("Got \(tours.count) commits")
+            collectionView.reloadData()
+        } catch {
+            print("Fetch failed")
+        }
     }
 
     //Массив для прогулок
