@@ -1,19 +1,17 @@
-//
-//  WalkViewCell.swift
-//  AnyTimeWalk
-//
-//  Created by Egor Dadugin on 25.03.2021.
-//
-
 import UIKit
 
 protocol WalkCollectionCellDelegate : class {
     func didLikeButtonPressed(cell: WalkViewCell)
 }
 
+protocol WalkCollectionCellDelegate1 : class {
+    func didFavsLikeButtonPressed(cell: WalkViewCell)
+}
+
 
 class WalkViewCell: UICollectionViewCell {
-    var delegate:WalkCollectionCellDelegate?
+    var delegate1:WalkCollectionCellDelegate?
+    var delegate2:WalkCollectionCellDelegate1?
     
     @IBOutlet weak var walkImage: UIImageView!
     @IBOutlet weak var favsImage: UIImageView!
@@ -26,10 +24,10 @@ class WalkViewCell: UICollectionViewCell {
     @IBOutlet weak var likeButtonTapped: UIButton!
     @IBOutlet weak var favsButtonTapped: UIButton!
     @IBAction func likeButtonPressed(_ sender: Any) {
-        delegate?.didLikeButtonPressed(cell: self)
+        delegate1?.didLikeButtonPressed(cell: self)
     }
     @IBAction func favsButtonPressed(_ sender: Any) {
-        delegate?.didLikeButtonPressed(cell: self)
+        delegate2?.didFavsLikeButtonPressed(cell: self)
     }
     
     var isLiked = false{

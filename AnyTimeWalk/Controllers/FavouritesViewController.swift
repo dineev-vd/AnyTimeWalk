@@ -1,25 +1,18 @@
-//
-//  FavouritesViewController.swift
-//  AnyTimeWalk
-//
-//  Created by Egor Dadugin on 26.03.2021.
-//
-
 import UIKit
 import CoreData
 
-class FavouritesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, WalkCollectionCellDelegate {
-    var container:NSPersistentContainer!
-    var tours: [Tour] = []
+class FavouritesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, WalkCollectionCellDelegate1{
+    
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    func didLikeButtonPressed(cell: WalkViewCell) {
+    func didFavsLikeButtonPressed(cell: WalkViewCell) {
         if let indexPath = collectionView.indexPath(for: cell) {
             favs[indexPath.row].isLiked = favs[indexPath.row].isLiked ? false : true
-            cell.isLiked = favs[indexPath.row].isLiked
+            cell.favsIsLiked = favs[indexPath.row].isLiked
+            walks[indexPath.row].isLiked = false
             favs.remove(at: indexPath.row)
-            //Остается лайк в walks
+            collectionView.reloadData()
         }
     }
     
@@ -27,9 +20,9 @@ class FavouritesViewController: UIViewController, UICollectionViewDelegate, UICo
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! WalkViewCell
         cell.favsName.text = favs[indexPath.row].name
         cell.favsImage.image = favs[indexPath.row].featuredImage
-        cell.favsDescription.text = favs[indexPath.row].description
+        cell.favsDescription.text = favs[indexPath.row].shortDescription
         cell.favsIsLiked = favs[indexPath.row].isLiked
-        cell.delegate = self
+        cell.delegate2 = self
         cell.layer.cornerRadius = 4.0
         return cell
     }
@@ -43,7 +36,6 @@ class FavouritesViewController: UIViewController, UICollectionViewDelegate, UICo
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        container = NSPersistentContainer(name: "AnyTimeWalk")
         super.viewDidLoad()
         collectionView.backgroundColor = .clear
     }
@@ -59,18 +51,5 @@ class FavouritesViewController: UIViewController, UICollectionViewDelegate, UICo
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return favs.count
-    }
-    
-    func loadSavedData() {
-        let request = Tour.createFetchRequest()
-        let sort = NSSortDescriptor(key: "name", ascending: false)
-        request.sortDescriptors = [sort]
-        do {
-            tours = try container.viewContext.fetch(request)
-            print("Got \(tours.count) commits")
-            collectionView.reloadData()
-        } catch {
-            print("Fetch failed")
-        }
     }
 }

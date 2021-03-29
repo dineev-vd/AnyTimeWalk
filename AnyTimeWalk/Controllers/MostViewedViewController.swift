@@ -1,16 +1,7 @@
-//
-//  MostViewedViewController.swift
-//  AnyTimeWalk
-//
-//  Created by Egor Dadugin on 25.03.2021.
-//
-
 import UIKit
 import CoreData
 
 class MostViewedViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, WalkCollectionCellDelegate {
-    var container:NSPersistentContainer!
-    var tours: [Tour] = []
     
     func didLikeButtonPressed(cell: WalkViewCell) {
         if let indexPath = collectionView.indexPath(for: cell) {
@@ -31,9 +22,9 @@ class MostViewedViewController: UIViewController, UICollectionViewDelegate, UICo
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! WalkViewCell
         cell.nameLabel.text = walks[indexPath.row].name
         cell.walkImage.image = walks[indexPath.row].featuredImage
-        cell.descriptionLabel.text = walks[indexPath.row].description
+        cell.descriptionLabel.text = walks[indexPath.row].shortDescription
         cell.isLiked = walks[indexPath.row].isLiked
-        cell.delegate = self
+        cell.delegate1 = self
         cell.layer.cornerRadius = 4.0
         return cell
     }
@@ -49,10 +40,12 @@ class MostViewedViewController: UIViewController, UICollectionViewDelegate, UICo
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
-        container = NSPersistentContainer(name: "AnyTimeWalk")
         super.viewDidLoad()
         collectionView.backgroundColor = .clear
-        //collectionView.dataSource = walks as! UICollectionViewDataSource
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        collectionView.reloadData()
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -62,20 +55,4 @@ class MostViewedViewController: UIViewController, UICollectionViewDelegate, UICo
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return walks.count
     }
-    
-    func loadSavedData() {
-        let request = Tour.createFetchRequest()
-        let sort = NSSortDescriptor(key: "name", ascending: false)
-        request.sortDescriptors = [sort]
-        do {
-            tours = try container.viewContext.fetch(request)
-            print("Got \(tours.count) commits")
-            collectionView.reloadData()
-        } catch {
-            print("Fetch failed")
-        }
-    }
-
-    //Массив для прогулок
-    private var walks = [Walk(walkId: "1", name: "test", description: "This is description for test", featuredImage: UIImage(named: "rome.jpg")!, isLiked: false),Walk(walkId: "2", name: "test2", description: "This is description for test2", featuredImage: UIImage(named: "rome.jpg")!, isLiked: false)]
 }

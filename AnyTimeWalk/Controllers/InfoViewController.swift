@@ -1,10 +1,3 @@
-//
-//  InfoViewController.swift
-//  AnyTimeWalk
-//
-//  Created by Egor Dadugin on 26.03.2021.
-//
-
 import UIKit
 
 class InfoViewController: UIViewController {
@@ -17,7 +10,7 @@ class InfoViewController: UIViewController {
 
         featuredImage.image = currentWalk.featuredImage
         nameLabel.text = currentWalk.name
-        infoLabel.text = currentWalk.description
+        infoLabel.text = currentWalk.fullDescription
     }
     
     var currentWalk: Walk!

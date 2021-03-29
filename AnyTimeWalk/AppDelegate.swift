@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  AnyTimeWalk
-//
-//  Created by Влад Динеев on 24.02.2021.
-//
-
 import UIKit
 import CoreData
 import YandexMapsMobile

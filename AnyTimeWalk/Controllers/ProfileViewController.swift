@@ -1,10 +1,3 @@
-//
-//  ProfileViewController.swift
-//  AnyTimeWalk
-//
-//  Created by Egor Dadugin on 26.03.2021.
-//
-
 import UIKit
 
 class ProfileViewController: UIViewController {
@@ -15,6 +8,7 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
 
         profileImage.layer.cornerRadius = 60
+        profileImage.image = UIImage(named: "avatar.jpg")
     }
 
 }

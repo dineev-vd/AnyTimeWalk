@@ -10,6 +10,7 @@
 		1760633D260E3EF100EF30FD /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1760633C260E3EF100EF30FD /* InfoViewController.swift */; };
 		17606341260E4AC200EF30FD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17606340260E4AC200EF30FD /* ProfileViewController.swift */; };
 		17606344260E4FAE00EF30FD /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17606343260E4FAE00EF30FD /* FavouritesViewController.swift */; };
+		17A66F0F26121CB5002C8569 /* WalksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A66F0E26121CB5002C8569 /* WalksViewController.swift */; };
 		17CEED02260BE720007FC409 /* WalkViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CEED01260BE720007FC409 /* WalkViewCell.swift */; };
 		17CEED05260BE72A007FC409 /* Walk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CEED04260BE72A007FC409 /* Walk.swift */; };
 		17CEED08260BE82A007FC409 /* MostViewedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CEED07260BE82A007FC409 /* MostViewedViewController.swift */; };
@@ -17,26 +18,17 @@
 		3A1D191770B424F2B7158B0B /* Pods_AnyTimeWalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59087694926FB29318E083F5 /* Pods_AnyTimeWalk.framework */; };
 		861017CF25E654FC00ABDE6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861017CE25E654FC00ABDE6A /* AppDelegate.swift */; };
 		861017D125E654FC00ABDE6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861017D025E654FC00ABDE6A /* SceneDelegate.swift */; };
-		861017D325E654FC00ABDE6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861017D225E654FC00ABDE6A /* ViewController.swift */; };
 		861017D625E654FC00ABDE6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 861017D425E654FC00ABDE6A /* Main.storyboard */; };
-		861017D925E654FC00ABDE6A /* AnyTimeWalk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 861017D725E654FC00ABDE6A /* AnyTimeWalk.xcdatamodeld */; };
 		861017DB25E654FF00ABDE6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 861017DA25E654FF00ABDE6A /* Assets.xcassets */; };
 		861017DE25E654FF00ABDE6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 861017DC25E654FF00ABDE6A /* LaunchScreen.storyboard */; };
-		861A23AD260FA22800F00949 /* Marker+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861A23AC260FA22700F00949 /* Marker+CoreDataProperties.swift */; };
-		861A23AE260FA22800F00949 /* Marker+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861A23AB260FA22700F00949 /* Marker+CoreDataClass.swift */; };
-		86267A4E260F50D600EFB057 /* Tour+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86267A4D260F50D600EFB057 /* Tour+CoreDataClass.swift */; };
-		86267A51260F50D800EFB057 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86267A50260F50D800EFB057 /* User+CoreDataProperties.swift */; };
-		86267A54260F50DA00EFB057 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86267A53260F50DA00EFB057 /* User+CoreDataClass.swift */; };
-		86267A57260F510600EFB057 /* Tour+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86267A56260F510600EFB057 /* Tour+CoreDataProperties.swift */; };
 		86AFB51D260F1B2E00BB77A8 /* AddTourController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AFB51C260F1B2E00BB77A8 /* AddTourController.swift */; };
-		86AFB522260F1C8900BB77A8 /* MostViewedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AFB521260F1C8900BB77A8 /* MostViewedController.swift */; };
-		86AFB525260F234D00BB77A8 /* AddMarkersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AFB524260F234D00BB77A8 /* AddMarkersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1760633C260E3EF100EF30FD /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		17606340260E4AC200EF30FD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		17606343260E4FAE00EF30FD /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		17A66F0E26121CB5002C8569 /* WalksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalksViewController.swift; sourceTree = "<group>"; };
 		17CEED01260BE720007FC409 /* WalkViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkViewCell.swift; sourceTree = "<group>"; };
 		17CEED04260BE72A007FC409 /* Walk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Walk.swift; sourceTree = "<group>"; };
 		17CEED07260BE82A007FC409 /* MostViewedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostViewedViewController.swift; sourceTree = "<group>"; };
@@ -47,21 +39,11 @@
 		861017CB25E654FC00ABDE6A /* AnyTimeWalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnyTimeWalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		861017CE25E654FC00ABDE6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		861017D025E654FC00ABDE6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		861017D225E654FC00ABDE6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		861017D525E654FC00ABDE6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		861017D825E654FC00ABDE6A /* AnyTimeWalk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AnyTimeWalk.xcdatamodel; sourceTree = "<group>"; };
 		861017DA25E654FF00ABDE6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		861017DD25E654FF00ABDE6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		861017DF25E654FF00ABDE6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		861A23AB260FA22700F00949 /* Marker+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Marker+CoreDataClass.swift"; path = "/Applications/Xcode.app/Contents/Developer/../../../../Users/egordadugin/Desktop/AnyTimeWalk/AnyTimeWalk/Marker+CoreDataClass.swift"; sourceTree = "<absolute>"; };
-		861A23AC260FA22700F00949 /* Marker+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Marker+CoreDataProperties.swift"; path = "/Users/egordadugin/Desktop/AnyTimeWalk/AnyTimeWalk/Marker+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
-		86267A4D260F50D600EFB057 /* Tour+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tour+CoreDataClass.swift"; sourceTree = "<group>"; };
-		86267A50260F50D800EFB057 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "User+CoreDataProperties.swift"; path = "/Users/egordadugin/Desktop/AnyTimeWalk/User+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
-		86267A53260F50DA00EFB057 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "User+CoreDataClass.swift"; path = "/Users/egordadugin/Desktop/AnyTimeWalk/User+CoreDataClass.swift"; sourceTree = "<absolute>"; };
-		86267A56260F510600EFB057 /* Tour+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Tour+CoreDataProperties.swift"; path = "/Users/egordadugin/Desktop/AnyTimeWalk/Tour+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
 		86AFB51C260F1B2E00BB77A8 /* AddTourController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTourController.swift; sourceTree = "<group>"; };
-		86AFB521260F1C8900BB77A8 /* MostViewedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostViewedController.swift; sourceTree = "<group>"; };
-		86AFB524260F234D00BB77A8 /* AddMarkersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMarkersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,12 +87,6 @@
 		861017CD25E654FC00ABDE6A /* AnyTimeWalk */ = {
 			isa = PBXGroup;
 			children = (
-				861A23AB260FA22700F00949 /* Marker+CoreDataClass.swift */,
-				861A23AC260FA22700F00949 /* Marker+CoreDataProperties.swift */,
-				86267A56260F510600EFB057 /* Tour+CoreDataProperties.swift */,
-				86267A53260F50DA00EFB057 /* User+CoreDataClass.swift */,
-				86267A50260F50D800EFB057 /* User+CoreDataProperties.swift */,
-				86267A4D260F50D600EFB057 /* Tour+CoreDataClass.swift */,
 				86AFB51F260F1B3A00BB77A8 /* Models */,
 				86AFB51A260F175900BB77A8 /* Controllers */,
 				861017CE25E654FC00ABDE6A /* AppDelegate.swift */,
@@ -119,10 +95,7 @@
 				861017DA25E654FF00ABDE6A /* Assets.xcassets */,
 				861017DC25E654FF00ABDE6A /* LaunchScreen.storyboard */,
 				861017DF25E654FF00ABDE6A /* Info.plist */,
-				861017D725E654FC00ABDE6A /* AnyTimeWalk.xcdatamodeld */,
 				17CEED0B260BE8E7007FC409 /* Media.xcassets */,
-				1760633C260E3EF100EF30FD /* InfoViewController.swift */,
-				17606343260E4FAE00EF30FD /* FavouritesViewController.swift */,
 			);
 			path = AnyTimeWalk;
 			sourceTree = "<group>";
@@ -130,13 +103,13 @@
 		86AFB51A260F175900BB77A8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1760633C260E3EF100EF30FD /* InfoViewController.swift */,
+				17606343260E4FAE00EF30FD /* FavouritesViewController.swift */,
 				17606340260E4AC200EF30FD /* ProfileViewController.swift */,
-				861017D225E654FC00ABDE6A /* ViewController.swift */,
 				17CEED07260BE82A007FC409 /* MostViewedViewController.swift */,
 				17CEED01260BE720007FC409 /* WalkViewCell.swift */,
 				86AFB51C260F1B2E00BB77A8 /* AddTourController.swift */,
-				86AFB521260F1C8900BB77A8 /* MostViewedController.swift */,
-				86AFB524260F234D00BB77A8 /* AddMarkersViewController.swift */,
+				17A66F0E26121CB5002C8569 /* WalksViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -273,25 +246,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				861017D325E654FC00ABDE6A /* ViewController.swift in Sources */,
+				17A66F0F26121CB5002C8569 /* WalksViewController.swift in Sources */,
 				861017CF25E654FC00ABDE6A /* AppDelegate.swift in Sources */,
 				17CEED08260BE82A007FC409 /* MostViewedViewController.swift in Sources */,
-				861017D925E654FC00ABDE6A /* AnyTimeWalk.xcdatamodeld in Sources */,
-				86AFB525260F234D00BB77A8 /* AddMarkersViewController.swift in Sources */,
-				86AFB522260F1C8900BB77A8 /* MostViewedController.swift in Sources */,
-				86267A54260F50DA00EFB057 /* User+CoreDataClass.swift in Sources */,
-				86267A57260F510600EFB057 /* Tour+CoreDataProperties.swift in Sources */,
 				861017D125E654FC00ABDE6A /* SceneDelegate.swift in Sources */,
-				86267A4E260F50D600EFB057 /* Tour+CoreDataClass.swift in Sources */,
-				86267A51260F50D800EFB057 /* User+CoreDataProperties.swift in Sources */,
-				861A23AE260FA22800F00949 /* Marker+CoreDataClass.swift in Sources */,
 				17CEED05260BE72A007FC409 /* Walk.swift in Sources */,
 				17606341260E4AC200EF30FD /* ProfileViewController.swift in Sources */,
 				1760633D260E3EF100EF30FD /* InfoViewController.swift in Sources */,
 				17606344260E4FAE00EF30FD /* FavouritesViewController.swift in Sources */,
 				86AFB51D260F1B2E00BB77A8 /* AddTourController.swift in Sources */,
 				17CEED02260BE720007FC409 /* WalkViewCell.swift in Sources */,
-				861A23AD260FA22800F00949 /* Marker+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,19 +459,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		861017D725E654FC00ABDE6A /* AnyTimeWalk.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				861017D825E654FC00ABDE6A /* AnyTimeWalk.xcdatamodel */,
-			);
-			currentVersion = 861017D825E654FC00ABDE6A /* AnyTimeWalk.xcdatamodel */;
-			path = AnyTimeWalk.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 861017C325E654FC00ABDE6A /* Project object */;
 }
